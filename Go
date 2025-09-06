@@ -1,0 +1,27 @@
+package main
+
+import (
+    "fmt"
+)
+
+func main() {
+
+    // variavel para armazenar o peso em kg
+    var peso float64
+
+    // variavel para armazenar a altura em metros
+    var altura float64
+
+    // variavel para armazenar o IMC calculado
+    var imc float64
+
+    fmt.Print("Digite o seu peso em kg (ex: 70.5): ")
+    fmt.Scan(&peso) // le o peso digitado pelo usuário
+
+    fmt.Print("Digite a sua altura em metros (ex: 1.75): ")
+    fmt.Scan(&altura) // le a altura digitada pelo usuário
+
+    imc = peso / (altura * altura) // formula do IMC
+
+    fmt.Printf("\nSeu IMC é: %.2f\n", imc) // mostra o IMC com 2 casas decimais
+}

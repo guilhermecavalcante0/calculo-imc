@@ -1,0 +1,11 @@
+# variavel para armazenar o peso em kg
+peso = float(input("Digite o seu peso em kg (ex: 70.5): "))
+
+# variavel para armazenar a altura em metros
+altura = float(input("Digite a sua altura em metros (ex: 1.75): "))
+
+# variavel para armazenar o IMC calculado
+imc = peso / (altura ** 2)  # fórmula do IMC
+
+# mostra o IMC com 2 casas decimais
+print(f"\nSeu IMC é: {imc:.2f}")

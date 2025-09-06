@@ -1,0 +1,27 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+
+        // Variavel para armazenar o peso em kg
+    double peso;   
+
+        // Variavel para armazenar a altura em metros
+    double altura; 
+
+        // Variavel para armazenar o IMC calculado
+    double imc;   
+
+    std::cout << "Digite o seu peso em kg (ex: 70.5):"; // manda mensagem na tela para o usuario
+    std::cin >> peso;  // le o peso digitado pelo usuario
+
+    std::cout << "Digite a sua altura em metros (ex: 1.75):";
+    std::cin >> altura;  // le a altura digitada pelo usuario
+
+        imc = peso / (altura * altura); // formula do IMC
+
+    cout << "\nSeu IMC é: " << fixed << setprecision(2) << imc << endl; //deixa o numero com duas casas decimais
+
+    return 0;
+}

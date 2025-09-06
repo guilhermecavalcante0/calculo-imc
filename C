@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+
+    // Variável para armazenar o peso em kg
+    double peso;
+
+    // Variável para armazenar a altura em metros
+    double altura;
+
+    // Variável para armazenar o IMC calculado
+    double imc;
+
+    printf("Digite o seu peso em kg (ex: 70.5): ");
+    scanf("%lf", &peso); // le o peso digitado pelo usuário
+
+    printf("Digite a sua altura em metros (ex: 1.75): ");
+    scanf("%lf", &altura); // le a altura digitada pelo usuário
+
+    imc = peso / (altura * altura); // fórmula do IMC
+
+    printf("\nSeu IMC é: %.2lf\n", imc); // mostra o IMC com 2 casas decimais
+
+    return 0;
+}
