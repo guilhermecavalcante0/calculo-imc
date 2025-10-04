@@ -12,9 +12,9 @@ O **Índice de Massa Corporal (IMC)** é uma medida internacional usada para ava
 
 ### 🧮 Fórmula do IMC
 
-\[
-IMC = \frac{\text{peso (kg)}}{\text{altura (m)}^2}
-\]
+
+IMC = peso/(altura^2)
+
 
 ## 🛠️ Linguagens Utilizadas
 
